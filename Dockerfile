@@ -4,9 +4,11 @@ WORKDIR /opt/scripts/
 #add miniconda3
 add Miniconda3-latest-Linux-ppc64le.sh /opt/scripts/
 
+RUN /opt/scripts/Miniconda3-latest-Linux-ppc64le.sh
+RUN conda install anaconda
 
 #add Jupyter
-RUN pip install notebook pyyaml
+#RUN pip install notebook pyyaml
 
 
 #add NIMBIX application
